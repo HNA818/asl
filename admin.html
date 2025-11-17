@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<style>
+body { background:#0d0d0d; color:white; font-family:Arial; text-align:center; }
+button { padding:10px 20px; background:#00c851; color:white; border:none; border-radius:8px; }
+.container { margin-top:100px; }
+textarea { width:400px; height:200px; }
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>🛠 لوحة التحكم</h1>
+<form method='POST'>
+<button>إنشاء مفتاح جديد</button>
+</form>
+{% if new_key %}
+<p>🔑 المفتاح الجديد:</p>
+<p>{{new_key}}</p>
+{% endif %}
+<p>📄 جميع المفاتيح:</p>
+<textarea readonly>{% for k in keys %}{{k}}
+{% endfor %}</textarea>
+</div>
+</body>
+</html>

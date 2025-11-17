@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+<style>
+body { background:#0d0d0d; color:white; font-family:Arial; text-align:center; }
+textarea { width:90%; height:400px; background:#111; color:#1e90ff; padding:10px; }
+.container { margin-top:50px; }
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>📄 النتائج</h1>
+<textarea readonly>{% for r in results %}{{r}}
+{% endfor %}</textarea>
+</div>
+</body>
+</html>

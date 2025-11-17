@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Panel</title>
+<style>
+body { background:#0d0d0d; color:white; font-family:Arial; text-align:center; }
+input { padding:10px; width:250px; margin:10px; border-radius:8px; }
+button { padding:10px 20px; background:#1e90ff; color:white; border:none; border-radius:8px; }
+.container { margin-top:120px; }
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>⚙️ مولد الحسابات</h1>
+<form action='/generate' method='POST'>
+<input name='domain' placeholder='اكتب الدومين (مثال: hotmail.com)' required><br>
+<input name='amount' type='number' placeholder='عدد الحسابات (حتى مليون)' required><br>
+<button>توليد</button>
+</form>
+</div>
+</body>
+</html>
